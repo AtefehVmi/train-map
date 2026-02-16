@@ -1,8 +1,9 @@
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import { useEffect } from "react";
 import type { Station } from "../types/station";
+import type { LatLngExpression } from "leaflet";
 
-const germanyCenter: [number, number] = [51.1657, 10.4515];
+const germanyCenter: LatLngExpression = [51.1657, 10.4515];
 
 type StationsMapProps = {
   stations: Station[];
